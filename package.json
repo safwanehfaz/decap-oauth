@@ -7,6 +7,6 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "decap-cms-oauth-provider-node": "^1.0.0"
+    "netlify-cms-oauth-provider-node": "git+https://github.com/netlify/netlify-cms-oauth-provider.git#main"
   }
 }
