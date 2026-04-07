@@ -7,6 +7,6 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "netlify-cms-oauth-provider-node": "git+https://github.com/netlify/netlify-cms-oauth-provider.git#main"
+    "netlify-cms-oauth-provider-node": "git@github.com:vencax/netlify-cms-github-oauth-provider.git"
   }
 }
