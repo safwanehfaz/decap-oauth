@@ -1,8 +1,8 @@
 const OAuthProvider = require('netlify-cms-oauth-provider-node');
 
-const { ORIGIN, OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET } = process.env;
+const { ORIGINS, OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET } = process.env;
 
-if (!ORIGIN || !OAUTH_CLIENT_ID || !OAUTH_CLIENT_SECRET) {
+if (!ORIGINS || !OAUTH_CLIENT_ID || !OAUTH_CLIENT_SECRET) {
   console.error("Missing env vars. Required: ORIGIN, OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET");
   process.exit(1);
 }
