@@ -1,4 +1,4 @@
-const OAuthProvider = require('netlify-cms-oauth-provider-node');
+const OAuthProvider = require('decap-cms-oauth-provider-node');
 
 const { ORIGIN, OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET } = process.env;
 
@@ -8,13 +8,10 @@ if (!ORIGIN || !OAUTH_CLIENT_ID || !OAUTH_CLIENT_SECRET) {
 }
 
 const server = new OAuthProvider({
-  // This enables GitHub OAuth for Decap/Netlify CMS
   providers: {
     github: {
       clientId: OAUTH_CLIENT_ID,
-      clientSecret: OAUTH_CLIENT_SECRET,
-      // optional, usually not needed:
-      // redirectUri: `${ORIGIN}/admin/`
+      clientSecret: OAUTH_CLIENT_SECRET
     }
   }
 }).server;
