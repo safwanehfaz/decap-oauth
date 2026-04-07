@@ -1,4 +1,4 @@
-const OAuthProvider = require('decap-cms-oauth-provider-node');
+const OAuthProvider = require('netlify-cms-oauth-provider-node');
 
 const { ORIGIN, OAUTH_CLIENT_ID, OAUTH_CLIENT_SECRET } = process.env;
 
